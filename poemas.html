@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cartas & Poemas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Serif JP', serif;
+      background-color: #fff3f7;
+      color: #333;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .volver {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      background-color: #f8cdd1;
+      border: none;
+      border-radius: 50%;
+      width: 34px;
+      height: 34px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+
+    .volver:hover {
+      background-color: #f3a7b2;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 2.4em;
+    }
+
+    .contenedor-poemas {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 10px;
+    }
+
+    .poema {
+      background-color: #fff;
+      border: 2px solid #f9c7d5;
+      border-radius: 12px;
+      padding: 20px;
+      font-size: 1em;
+      white-space: pre-wrap;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    @media (max-width: 600px) {
+      .poema {
+        font-size: 0.95em;
+      }
+    }
+        #fondo-gif {display: block; 
+        margin: 40px auto; 
+        max-width: 100%; 
+        height: auto; } 
+
+#audio2rincipal {
+  width: 250px;
+  height: 35px;
+  margin: 20px auto;
+  display: block; 
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  outline: none;
+}
+#audio2 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Botón volver -->
+  <a href="paginaprincipal.html" class="volver">←</a>
+
+  <h1>📜 Cartas & Poemas</h1>
+
+  <div class="contenedor-poemas">
+    <div class="poema">
+Amorcito
+Hoy quiero escribirte solo para darte las gracias. Gracias por estar en mi vida, por hacerme sentir amado de una forma tan bonita, gracias por cada momento que compartimos, por cada palabra tuya que me hace dormir con una sonrisa en el rostro
+    </div>
+    <div class="poema">
+Mi amorcito,
+Si algún día te sientes abrumada o triste, solo quiero que recuerdes que tú eres una mujer valiente, fuerte y muy amada. Respira, cierra los ojos y piensa en mí abrazándote fuerte. Estoy aquí, siempre para  ti
+    </div>
+    <div class="poema">
+Mi bebita linda, Amo cómo eres, amo tus gustos, tus antojos y cómo haces todo con tanto cariño y nunca te rindes, yo te admiro mucho, siempre que te sientas mal por sobre pensar recuerda lo maravillosa que eres, y cocinas delicioso
+    </div>
+    <div class="poema">
+Mi princesita hermosa,
+Quiero que siempre recuerdes que yo estoy contigo, pase lo que pase. En los días felices y en los más difíciles. Amo verte sonreír, amo darte paz, y mucho mas amo saber que podemos caminar juntos, crecer juntos y mejorar poco a poco
+    </div>
+  </div>
+
+    <img src="assets/img/tu.gif" id="fondo-gif"  /> 
+
+    <audio id="audio2" controls loop>
+  <source src="assets/audio/cancion2.mp3" type="audio/mp3" />
+  Tu navegador no soporta audio.
+</audio>
+
+</body>
+</html>
